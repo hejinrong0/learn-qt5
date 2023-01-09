@@ -8,6 +8,7 @@ qt5 is learned and qt5 instances are recorded
 3. lqt_image 图片操作
 4. lqt_video 实时数据操作
 5. lqt_ros2_topic ROS2话题 创建和监听
+6. lqt_qt5_widget 一些qt基础控件
 
 
 ### 变更日志
