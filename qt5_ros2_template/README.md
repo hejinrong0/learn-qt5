@@ -5,22 +5,27 @@
 
 ## 目录结构
 #### qtcreate 创建的目录
+```
 ├── CMakeLists.txt
 ├── CMakeLists.txt.user
 ├── main.cpp
 ├── mainwindow.cpp
 ├── mainwindow.h
 └── mainwindow.ui
+```
 
 #### ros2 创建的功能包
+```
 ├── CMakeLists.txt
 ├── include
 │   └── qt5_ros2_template
 ├── package.xml
 └── src
+```
 
 
 #### 合并后的工作目录
+```
 .
 ├── CMakeLists.txt
 ├── include
@@ -32,7 +37,30 @@
 │   └── mainwindow.cpp
 └── ui
     └── mainwindow.ui
+```
 
+> 对合并后的工作目录做补充说明
+
+```
+├── CMakeLists.txt
+├── CMakeLists.txt.user
+├── include // 存放头文件 .hpp .h
+│   ├── mainobject.h
+│   ├── mainwindow.h
+│   └── splashscreen.h
+├── package.xml
+├── README.md
+├── resource // 存放系统中使用的资源文件
+│   └── resource.qrc
+├── src // 存放主逻辑代码文件
+│   ├── main.cpp
+│   ├── mainobject.cpp
+│   ├── mainwindow.cpp
+│   └── splashscreen.cpp
+└── ui // 存放ui文件
+    └── mainwindow.ui
+
+```
 
 
 # 环境准备
@@ -46,3 +74,8 @@
 > source /opt/ros/humble/setup.bash
 5. 启动qt环境
 >./Qt5.9.9/Tools/QtCreator/bin/qtcreator
+
+
+# 开发记录
+
+

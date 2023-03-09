@@ -2,16 +2,10 @@
 
 #include <QApplication>
 
-#include "mainobject.h"
-
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    
-//     MainWindow w;
-//     w.show();
-    MainObject mainObject;
-    mainObject.setInit();
-
+    MainWindow w;
+    w.show();
     return a.exec();
 }
